@@ -143,6 +143,10 @@ details[open] summary span { transform: rotate(45deg); }
 .teaching-grid article { border-top: 1px solid var(--line); padding-top: 20px; }
 .teaching-grid h3 { font-size: 15px; line-height: 1.5; font-weight: 500; margin: 17px 0 10px; }
 .teaching-grid p { font-size: 12px; margin-bottom: 0; }
+.supervision-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-bottom: 30px; }
+.supervision-stats article { background: var(--soft); padding: 24px; border-radius: 10px; }
+.supervision-stats strong { font-family: Georgia, serif; font-size: 48px; font-weight: 400; color: var(--accent); line-height: 1.1; }
+.supervision-stats p { font-size: 12px; line-height: 1.8; margin: 13px 0 0; }
 .mentoring-list { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; }
 .mentoring-list h3 { font-size: 15px; font-weight: 500; }
 .mentoring-list p { font-size: 13px; margin-bottom: 0; }
@@ -220,7 +224,7 @@ footer a { text-decoration: none; }
   p { font-size: 13px; }
   .intro-actions { gap: 22px; }
   .subsection { margin-top: 36px; padding-top: 29px; }
-  .perspective-grid, .skills-grid, .education-list, .teaching-grid, .mentoring-list, .contact-grid { grid-template-columns: 1fr; }
+  .perspective-grid, .skills-grid, .education-list, .teaching-grid, .supervision-stats, .mentoring-list, .contact-grid { grid-template-columns: 1fr; }
   .perspective-grid article { padding: 22px; }
   .perspective-grid h3 { font-size: 26px; }
   .perspective-grid p { font-size: 13px; }
