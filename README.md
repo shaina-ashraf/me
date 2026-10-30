@@ -4,11 +4,13 @@ A minimal, responsive static portfolio starter for GitHub Pages. No installation
 
 ## Current state
 
-- Local starter prepared; GitHub Pages deployment is being configured.
+- Starter uploaded to the `main` branch; GitHub Pages is enabled for `main` / root.
 - Connected GitHub account: `shaina-ashraf`.
 - Repository: `https://github.com/shaina-ashraf/me` (public, chosen by the user).
-- Intended website: `https://shaina-ashraf.github.io/me/` (not yet verified live).
-- Validation: served the starter locally and checked its rendered page in the browser. The local server was stopped after preview. GitHub publication remains unverified.
+- Website: `https://shaina-ashraf.github.io/me/` (verified live on 30 October 2026).
+- Validation: served the starter locally and checked its rendered page in the browser. The local server was stopped after preview.
+- First deployment: `https://github.com/shaina-ashraf/me/actions/runs/41122356834`; the deploy job succeeded and the live page was checked in the browser.
+- Audience: both research and industry, as requested. The next version should cover research/publications, practical projects, technical skills and a CV.
 
 ## Files
 
@@ -42,4 +44,4 @@ Then visit `http://127.0.0.1:8000`. Stop the server with Ctrl+C.
 
 ## Next content pass
 
-Decide on the portfolio's audience and visual style, then add a short bio, selected work, publications if applicable, a downloadable CV, and chosen public contact links. Preserve the distinction between published and ongoing work.
+Use the agreed research-and-industry focus. Decide on visual style, then add a short bio, selected work, publications, technical skills, a downloadable CV, and chosen public contact links. Preserve the distinction between published and ongoing work.
