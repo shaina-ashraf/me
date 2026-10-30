@@ -14,7 +14,7 @@ A persistent profile sidebar and five distinct views:
 1. **About** — career narrative, complementary research/engineering/education strengths, technical expertise.
 2. **Experience** — reverse-chronological professional timeline and education.
 3. **Research** — five project case studies and five publication/preprint records.
-4. **Teaching** — five courses taught, undergraduate final-year-project supervision, master’s supervision and research mentoring.
+4. **Teaching** — seven courses taught, undergraduate final-year-project supervision, master’s supervision and research mentoring.
 5. **Contact** — public email, LinkedIn, GitHub, Google Scholar and CAISA profile.
 
 Layout inspiration: https://vahidsj.github.io/ — profile sidebar and separate résumé/research/teaching/contact views. The colours, typography, text and implementation are this portfolio's own. No reference-site images or personal content were reused.
@@ -25,7 +25,7 @@ Layout inspiration: https://vahidsj.github.io/ — profile sidebar and separate 
 
 - Direct statements from Shaina: current Bonn/CAISA role, PhD candidacy, LLM/generative AI/model-training expertise, public email and LinkedIn, and contributions across dataset/annotation design, coding, training, evaluation and supervision.
 - Supplied CV: `Shaina_Ashraf_CV_Updated_2026.pdf`. Used for employment chronology, education, teaching, technical skills and Google Scholar link. The original PDF remains outside the repository and is not published.
-- Direct follow-up from Shaina: courses taught are Software Engineering, Web Engineering, Data Structures, Databases and Design Patterns; supervised more than 50 bachelor’s students for final-year projects and 3 master’s students during the PhD. Counts refer to students, with no claim that the master’s students have graduated.
+- Direct follow-up from Shaina: courses taught are Software Engineering, Web Engineering, Data Structures, Databases, Design Patterns, Natural Language Processing and Data Science; supervised more than 50 bachelor’s students for final-year projects and 3 master’s students during the PhD. Counts refer to students, with no claim that the master’s students have graduated.
 - Reviewed publication PDFs, cross-checked with the public records below.
 
 | Project | Public source | Status used |
@@ -69,8 +69,9 @@ Education: PhD in Computer Science at the University of Bonn, in progress; MS in
 - Checked all HTML IDs/anchor targets/assets, retained five projects and five publications, and checked that the phone number is absent.
 - Published app commit: `ca2ab492c52f29b2fa12198459f5e463b380d679`.
 - Deployment: https://github.com/shaina-ashraf/me/actions/runs/41125871021 — build, report and deploy jobs succeeded.
-- Verified the clean public URL: five panel navigation links, five dated roles, two education entries, five taught courses and the confirmed 50+/3 supervision figures.
-- CSS and JavaScript loaded and panel switching worked on the live site. A cache-busting query was used during rollout; the clean address was then reloaded and verified.
+- Verified the clean public URL: five panel navigation links, five dated roles, two education entries, the initial five taught courses and the confirmed 50+/3 supervision figures.
+- CSS and JavaScript loaded and panel switching worked on the live site.
+- The course list was subsequently expanded to seven with Natural Language Processing and Data Science, as supplied directly by Shaina. A cache-busting query was used during rollout; the clean address was then reloaded and verified.
 
 ## Local preview
 
