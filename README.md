@@ -29,7 +29,7 @@ Lab profile: https://caisa-lab.github.io/members/shaina.html
 
 ## Content boundaries
 
-- Authorship is verified; specific individual implementation, leadership and supervision responsibilities remain to be confirmed.
+- Shaina confirmed contributions across dataset and annotation design, coding, model training, evaluation and supervision. The About section states this overall scope; project authorship credits remain intact. More granular project-specific responsibilities and leadership scope have not been specified.
 - Project methods describe the collaborative work. Applied-relevance descriptions connect those methods to potential uses; they do not claim commercial deployment or business outcomes.
 - Keep preprints distinct from peer-reviewed publications. An anonymous manuscript without a verified public record was excluded from the public page.
 - Do not present prompt-based retrieval as a deployed RAG application or as LLM fine-tuning.
@@ -62,4 +62,4 @@ Edit the HTML for content and CSS for styling. Keep asset links relative so the 
 
 ## Next content pass
 
-Confirm individual contributions for each project, a CV and visual preferences. Add concrete training details or code links only when verified and appropriate for public sharing.
+Add project-specific contribution details, a CV and visual preferences. Add concrete training details or code links only when verified and appropriate for public sharing.
