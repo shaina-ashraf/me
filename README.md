@@ -11,7 +11,7 @@ Static portfolio for research and industry audiences. No dependencies or build s
 
 The page introduces Shaina as a PhD candidate at the University of Bonn and a research assistant in CAISA Lab, as supplied directly by Shaina. Core expertise supplied by Shaina: LLMs, generative AI and model training. The portfolio connects this background with multilingual NLP, retrieval, classification, data and evaluation through five sourced collaborative projects.
 
-Sections: introduction, about, selected projects, expertise, publications, contact. Four project cards use native expandable details. Public contact routes currently use GitHub and the CAISA profile. No contact form, analytics, cookies or external fonts.
+Sections: introduction, about, selected projects, expertise, publications, contact. Four project cards use native expandable details. Public contact routes use the email and LinkedIn supplied by Shaina, alongside GitHub and the CAISA profile. No contact form, analytics, cookies or external fonts.
 
 ## Sources
 
@@ -34,7 +34,7 @@ Lab profile: https://caisa-lab.github.io/members/shaina.html
 - Keep preprints distinct from peer-reviewed publications. An anonymous manuscript without a verified public record was excluded from the public page.
 - Do not present prompt-based retrieval as a deployed RAG application or as LLM fine-tuning.
 - No performance headline scores are currently displayed. Any future metric needs its task, evaluation split and denominator checked against the source. The SemEval paper contains differing score statements, so no single score was promoted.
-- No CV, photo, public email, LinkedIn or unverified software stack has been added. Confirm these before linking them.
+- Public email and LinkedIn were supplied directly by Shaina and added to the contact section on 30 October 2026. No CV, photo or unverified software stack has been added.
 
 ## Validation — 30 October 2026
 
@@ -62,4 +62,4 @@ Edit the HTML for content and CSS for styling. Keep asset links relative so the 
 
 ## Next content pass
 
-Confirm individual contributions for each project, preferred public contact information, a CV and visual preferences. Add concrete training details or code links only when verified and appropriate for public sharing.
+Confirm individual contributions for each project, a CV and visual preferences. Add concrete training details or code links only when verified and appropriate for public sharing.
