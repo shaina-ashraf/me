@@ -67,7 +67,10 @@ Education: PhD in Computer Science at the University of Bonn, in progress; MS in
 - Verified five panel routes, navigation highlighting, project expansion, direct publication links, refresh and browser back navigation locally.
 - Checked Experience, Research and Contact at 390 px: no document-level horizontal overflow.
 - Checked all HTML IDs/anchor targets/assets, retained five projects and five publications, and checked that the phone number is absent.
-- Live deployment verification for this structure is recorded below after publication.
+- Published app commit: `ca2ab492c52f29b2fa12198459f5e463b380d679`.
+- Deployment: https://github.com/shaina-ashraf/me/actions/runs/41125871021 — build, report and deploy jobs succeeded.
+- Verified the clean public URL: five panel navigation links, five dated roles, two education entries, five taught courses and the confirmed 50+/3 supervision figures.
+- CSS and JavaScript loaded and panel switching worked on the live site. A cache-busting query was used during rollout; the clean address was then reloaded and verified.
 
 ## Local preview
 
@@ -85,4 +88,4 @@ Edit HTML for content, CSS for layout and `site.js` for panel navigation. Keep l
 
 ## Next content pass
 
-Optional additions: a portrait supplied by Shaina, a public CV version, and project-specific code links and contribution details. Add courses, supervised thesis titles and outcomes only when supplied or verified.
+Optional additions: a portrait supplied by Shaina, a public CV version, and project-specific code links and contribution details. Add further course descriptions, supervised thesis titles and outcomes only when supplied or verified.
