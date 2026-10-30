@@ -42,7 +42,9 @@ Lab profile: https://caisa-lab.github.io/members/shaina.html
 - Previewed the page and opened project details in the browser.
 - Checked responsive rendering at 390 px; no horizontal overflow.
 - Checked unique HTML IDs, in-page anchor targets, stylesheet and favicon paths, and Git whitespace errors.
-- Live verification for this content update will be recorded after publication.
+- Content commit: `57b1a3ee2dc7fef0fdf9e8342ddf671e23b7890c`.
+- Deployment: https://github.com/shaina-ashraf/me/actions/runs/41124004655 — build and deploy jobs succeeded.
+- Verified the public page: updated title, five project summaries, five publication entries, loaded stylesheet, and no remaining starter placeholder.
 
 ## Local preview
 
