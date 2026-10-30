@@ -1,47 +1,63 @@
-# Shaina Ashraf — Portfolio
+# Shaina Ashraf — Research & Applied AI Portfolio
 
-A minimal, responsive static portfolio starter for GitHub Pages. No installation or build is required.
+Static portfolio for research and industry audiences. No dependencies or build step.
 
-## Current state
+- Website: https://shaina-ashraf.github.io/me/
+- Repository: https://github.com/shaina-ashraf/me
+- Hosting: GitHub Pages, `main` branch, `/ (root)`.
+- Page files: `index.html`, `styles.css`, `favicon.svg`, `.nojekyll`.
 
-- Starter uploaded to the `main` branch; GitHub Pages is enabled for `main` / root.
-- Connected GitHub account: `shaina-ashraf`.
-- Repository: `https://github.com/shaina-ashraf/me` (public, chosen by the user).
-- Website: `https://shaina-ashraf.github.io/me/` (verified live on 30 October 2026).
-- Validation: served the starter locally and checked its rendered page in the browser. The local server was stopped after preview.
-- First deployment: `https://github.com/shaina-ashraf/me/actions/runs/41122356834`; the deploy job succeeded and the live page was checked in the browser.
-- Audience: both research and industry, as requested. The next version should cover research/publications, practical projects, technical skills and a CV.
+## Content and positioning
 
-## Files
+The page introduces Shaina as a PhD candidate at the University of Bonn and a research assistant in CAISA Lab, as supplied directly by Shaina. Core expertise supplied by Shaina: LLMs, generative AI and model training. The portfolio connects this background with multilingual NLP, retrieval, classification, data and evaluation through five sourced collaborative projects.
 
-- `index.html`: page content and links.
-- `styles.css`: responsive layout and colors.
-- `favicon.svg`: site icon.
-- `.nojekyll`: publish static files without Jekyll processing.
+Sections: introduction, about, selected projects, expertise, publications, contact. Four project cards use native expandable details. Public contact routes currently use GitHub and the CAISA profile. No contact form, analytics, cookies or external fonts.
 
-Only the name and verified GitHub profile link are included. Bio, research details, publications, CV, photo and contact information still need to be supplied or approved before adding them.
+## Sources
 
-## Publish with GitHub Pages
+The supplied paper collection was reviewed alongside public records. Link to public paper records rather than uploading manuscript copies.
 
-1. Sign in to GitHub as `shaina-ashraf`.
-2. Use the **public** repository `me` for the free project-site address.
-3. Add the website files at the root of the `main` branch.
-4. Open **Settings → Pages**.
-5. Select **Deploy from a branch**, then **main** and **/ (root)**, and save.
-6. Check the deployment result and visit `https://shaina-ashraf.github.io/me/` after publication.
+| Project | Public source | Status used |
+| --- | --- | --- |
+| DeFaktS | https://aclanthology.org/2024.lrec-main.409/ | LREC-COLING 2024; first author |
+| User-context modelling | https://aclanthology.org/2024.woah-1.11/ | WOAH 2024; first author |
+| MultiProp | https://aclanthology.org/2025.abjadnlp-1.2/ | AbjadNLP 2025; coauthor |
+| Fact-checked claim retrieval | https://aclanthology.org/2025.semeval-1.183/ | SemEval 2025; coauthor |
+| Conspiracy Frame | https://arxiv.org/abs/2603.21368 | Public preprint, 2026; coauthor |
 
-Official setup guide: https://docs.github.com/en/pages/quickstart
+Lab profile: https://caisa-lab.github.io/members/shaina.html
 
-## Preview locally
+## Content boundaries
 
-Open `index.html` directly in a browser, or run this in macOS Terminal from this directory:
+- Authorship is verified; specific individual implementation, leadership and supervision responsibilities remain to be confirmed.
+- Project methods describe the collaborative work. Applied-relevance descriptions connect those methods to potential uses; they do not claim commercial deployment or business outcomes.
+- Keep preprints distinct from peer-reviewed publications. An anonymous manuscript without a verified public record was excluded from the public page.
+- Do not present prompt-based retrieval as a deployed RAG application or as LLM fine-tuning.
+- No performance headline scores are currently displayed. Any future metric needs its task, evaluation split and denominator checked against the source. The SemEval paper contains differing score statements, so no single score was promoted.
+- No CV, photo, public email, LinkedIn or unverified software stack has been added. Confirm these before linking them.
+
+## Validation — 30 October 2026
+
+- Reviewed supplied PDFs and verified public titles, authorship, venues and preprint status.
+- Previewed the page and opened project details in the browser.
+- Checked responsive rendering at 390 px; no horizontal overflow.
+- Checked unique HTML IDs, in-page anchor targets, stylesheet and favicon paths, and Git whitespace errors.
+- Live verification for this content update will be recorded after publication.
+
+## Local preview
+
+From the project directory in macOS Terminal:
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Then visit `http://127.0.0.1:8000`. Stop the server with Ctrl+C.
+Open http://127.0.0.1:8000 and stop with Ctrl+C. The site also works by opening `index.html` directly.
+
+## Update and publish
+
+Edit the HTML for content and CSS for styling. Keep asset links relative so the `/me/` project path works. Commit changes to `main`; GitHub Pages publishes the repository root automatically. Verify the resulting page and its project links after deployment.
 
 ## Next content pass
 
-Use the agreed research-and-industry focus. Decide on visual style, then add a short bio, selected work, publications, technical skills, a downloadable CV, and chosen public contact links. Preserve the distinction between published and ongoing work.
+Confirm individual contributions for each project, preferred public contact information, a CV and visual preferences. Add concrete training details or code links only when verified and appropriate for public sharing.

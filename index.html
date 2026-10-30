@@ -1,38 +1,119 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="The personal portfolio of Shaina Ashraf.">
-    <meta name="theme-color" content="#f4f1eb">
-    <title>Shaina Ashraf · Portfolio</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <div class="page">
-      <header class="header">
-        <a class="wordmark" href="./" aria-label="Shaina Ashraf home">SA<span>.</span></a>
-        <a class="github-link" href="https://github.com/shaina-ashraf">GitHub <span aria-hidden="true">↗</span></a>
-      </header>
-      <main id="main">
-        <p class="eyebrow">Personal portfolio</p>
-        <h1>Shaina<br><span>Ashraf.</span></h1>
-        <div class="intro">
-          <p>A space for my work,<br>ideas, and what comes next.</p>
-          <div class="status"><span class="status-dot" aria-hidden="true"></span>Portfolio in progress</div>
-        </div>
-        <section class="coming-soon" aria-labelledby="coming-soon-title">
-          <p class="section-number" aria-hidden="true">01 /</p>
-          <div>
-            <h2 id="coming-soon-title">A little more, soon.</h2>
-            <p>I’m putting together my portfolio. In the meantime, you can explore my work on GitHub.</p>
-            <a class="text-link" href="https://github.com/shaina-ashraf">Visit my GitHub profile <span aria-hidden="true">↗</span></a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shaina Ashraf — PhD candidate at the University of Bonn and research assistant in the CAISA Lab. LLMs, generative AI, model training and multilingual NLP.">
+  <meta name="theme-color" content="#f4f1eb">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shaina Ashraf · LLMs &amp; Applied NLP">
+  <meta property="og:description" content="Research in language models, multilingual NLP and information integrity. Explore selected projects and publications.">
+  <meta property="og:url" content="https://shaina-ashraf.github.io/me/">
+  <title>Shaina Ashraf · LLMs &amp; Applied NLP</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="header">
+      <a class="wordmark" href="./" aria-label="Shaina Ashraf home">SA<span>.</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#publications">Publications</a><a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">Shaina Ashraf / Research &amp; applied AI</p>
+        <h1 id="hero-title">Understanding language.<br><em>Building with AI.</em></h1>
+        <div class="hero-bottom">
+          <div class="hero-copy">
+            <p class="hero-intro">I’m a PhD candidate at the University of Bonn and a research assistant in the CAISA Lab. My expertise is in large language models, generative AI and model training.</p>
+            <div class="hero-actions"><a class="button" href="#projects">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link" href="#publications">Read my publications <span aria-hidden="true">↗</span></a></div>
           </div>
-        </section>
-      </main>
-      <footer><span>Shaina Ashraf</span><span>A work in progress.</span></footer>
-    </div>
-  </body>
+          <aside class="profile-note" aria-label="Current affiliation">
+            <span class="small-label">Based in Bonn, Germany</span>
+            <p>PhD candidate<br><strong>University of Bonn</strong></p>
+            <p>Research assistant<br><a href="https://caisa-lab.github.io/members/shaina.html">CAISA Lab <span aria-hidden="true">↗</span></a></p>
+          </aside>
+        </div>
+        <ul class="focus-strip" aria-label="Core expertise"><li>Large language models</li><li>Generative AI</li><li>Model training</li><li>Multilingual NLP</li></ul>
+      </section>
+      <section id="about" class="section about" aria-labelledby="about-title">
+        <div class="section-heading"><p class="eyebrow">01 / About</p><h2 id="about-title">Research depth.<br><em>Practical questions.</em></h2></div>
+        <div class="about-copy">
+          <p class="lead">How can we build language models that work across languages, understand context and help us make sense of complex information?</p>
+          <p>My research brings together natural language processing and computational social science. I study disinformation, propaganda and the ways language frames people and events, connecting these questions with model training, retrieval and evaluation.</p>
+          <p>Across my coauthored work, the methods span transformer models, multilingual embeddings, LLM prompting, ensemble learning and user representations. I’m interested in carrying this research into useful, carefully evaluated AI applications.</p>
+          <a class="text-link" href="https://caisa-lab.github.io/members/shaina.html">My CAISA Lab profile <span aria-hidden="true">↗</span></a>
+        </div>
+      </section>
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="section-top"><div><p class="eyebrow">02 / Selected projects</p><h2 id="projects-title">From research questions<br><em>to working methods.</em></h2></div><p class="section-description">Collaborative research, presented through the problems, methods and skills behind the papers.</p></div>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-meta"><span>01 / Retrieval &amp; LLMs</span><span class="badge">SemEval 2025</span></div>
+            <h3>Finding fact-checked claims<br>across languages.</h3>
+            <p>Matching a new claim to an existing fact-check is a semantic search problem. This project combines embedding-based retrieval with LLaMA relevance assessment to rank candidate claims across languages.</p>
+            <ul class="tags" aria-label="Methods"><li>Multilingual embeddings</li><li>Semantic search</li><li>LLM reranking</li></ul>
+            <details><summary>Inside the project <span aria-hidden="true">+</span></summary><div class="project-detail"><h4>Approach</h4><p>Compare Jina, E5 and MPNet embeddings, retrieve candidate claims with cosine similarity, then use structured prompts for LLaMA relevance scoring.</p><h4>Applied relevance</h4><p>Retrieval pipelines, ranking evaluation and choosing embedding models for multilingual search.</p><p class="credit">Coauthor · CAISA at SemEval-2025 Task 7</p></div></details>
+            <a class="project-link" href="https://aclanthology.org/2025.semeval-1.183/">Read the paper <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-meta"><span>02 / Training &amp; transfer</span><span class="badge">AbjadNLP 2025</span></div>
+            <h3>MultiProp:<br>learning across languages.</h3>
+            <p>Propaganda detection has to work beyond languages with abundant labels. MultiProp explores transformer ensembles, translation-based augmentation, meta-learning and text chunking for multilingual classification.</p>
+            <ul class="tags" aria-label="Methods"><li>Transformer ensembles</li><li>Meta-learning</li><li>Long-text processing</li></ul>
+            <details><summary>Inside the project <span aria-hidden="true">+</span></summary><div class="project-detail"><h4>Approach</h4><p>Combine encoder, decoder and hybrid model families; study few-shot transfer and split long documents into manageable segments.</p><h4>Applied relevance</h4><p>Adapting classifiers to limited training data, new languages and inputs longer than a model’s context window.</p><p class="credit">Coauthor · MultiProp Framework</p></div></details>
+            <a class="project-link" href="https://aclanthology.org/2025.abjadnlp-1.2/">Read the paper <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-meta"><span>03 / Data &amp; modelling</span><span class="badge">LREC-COLING 2024</span></div>
+            <h3>DeFaktS:<br>beyond a single label.</h3>
+            <p>Disinformation involves more than whether a post is true or false. DeFaktS introduces a German social-media dataset and a fine-grained annotation framework for analysing how misleading content is framed.</p>
+            <ul class="tags" aria-label="Methods"><li>Dataset design</li><li>Fine-grained classification</li><li>Transformer baselines</li></ul>
+            <details><summary>Inside the project <span aria-hidden="true">+</span></summary><div class="project-detail"><h4>Approach</h4><p>Define annotation categories for textual signals and compare classical machine-learning approaches with transformer-based classifiers, including German BERT.</p><h4>Applied relevance</h4><p>Task definition, labelled-data development and establishing baselines for specialised NLP problems.</p><p class="credit">First author · DeFaktS</p></div></details>
+            <a class="project-link" href="https://aclanthology.org/2024.lrec-main.409/">Read the paper <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-meta"><span>04 / Representation learning</span><span class="badge">WOAH 2024</span></div>
+            <h3>Understanding information<br>through user context.</h3>
+            <p>The same text can mean different things in different contexts. This work studies user representations for classifying unreliable posts, identifying spreaders and predicting future sharing behaviour.</p>
+            <ul class="tags" aria-label="Methods"><li>User embeddings</li><li>Personalisation</li><li>Temporal prediction</li></ul>
+            <details><summary>Inside the project <span aria-hidden="true">+</span></summary><div class="project-detail"><h4>Approach</h4><p>Compare User2Vec, task-trained user embeddings and representations derived from authorship attribution using social-media histories.</p><h4>Applied relevance</h4><p>Context-aware classification, representation learning and evaluating predictions over time.</p><p class="credit">First author · Harnessing Personalization Methods</p></div></details>
+            <a class="project-link" href="https://aclanthology.org/2024.woah-1.11/">Read the paper <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card wide">
+            <div class="project-meta"><span>05 / Structured language understanding</span><span class="badge preprint">Preprint · 2026</span></div>
+            <div class="wide-body"><div><h3>Conspiracy Frame:<br>looking inside a narrative.</h3><ul class="tags" aria-label="Methods"><li>Span annotation</li><li>Frame semantics</li><li>LLM evaluation</li></ul></div><div><p>Con.Fra. connects a semantic representation of conspiratorial narratives with span-level annotation of Telegram messages. The study examines LLM recognition across domains and the role of frame information.</p><p class="credit">Coauthor · Public preprint</p><a class="project-link" href="https://arxiv.org/abs/2603.21368">Read the preprint <span aria-hidden="true">↗</span></a></div></div>
+          </article>
+        </div>
+      </section>
+      <section id="expertise" class="section" aria-labelledby="expertise-title">
+        <div class="section-top"><div><p class="eyebrow">03 / Expertise</p><h2 id="expertise-title">The methods<br><em>behind the work.</em></h2></div></div>
+        <div class="expertise-grid">
+          <div><span class="expertise-number">01</span><h3>Language models<br>&amp; generative AI</h3><p>LLM prompting, relevance assessment, structured language analysis and evaluation of model behaviour.</p></div>
+          <div><span class="expertise-number">02</span><h3>Training<br>&amp; adaptation</h3><p>Transformer-based classification, ensemble methods, transfer learning and learning with limited labelled data.</p></div>
+          <div><span class="expertise-number">03</span><h3>Retrieval<br>&amp; multilingual NLP</h3><p>Semantic representations, embedding comparison, candidate retrieval and cross-lingual relevance ranking.</p></div>
+          <div><span class="expertise-number">04</span><h3>Data<br>&amp; evaluation</h3><p>Annotation frameworks, fine-grained labels, benchmark design and analysis across tasks and domains.</p></div>
+        </div>
+      </section>
+      <section id="publications" class="section" aria-labelledby="publications-title">
+        <div class="section-top"><div><p class="eyebrow">04 / Selected publications</p><h2 id="publications-title">The research,<br><em>in full.</em></h2></div><p class="section-description">Published papers and a public preprint. Full author lists and publication details are available at each source.</p></div>
+        <ol class="publication-list">
+          <li><span class="publication-year">2026</span><div><span class="publication-venue">arXiv · Preprint</span><h3><a href="https://arxiv.org/abs/2603.21368">Conspiracy Frame: a Semiotically-Driven Approach for Conspiracy Theories Detection <span aria-hidden="true">↗</span></a></h3><p>Heidi Campana Piva, <strong>Shaina Ashraf</strong>, et al.</p></div></li>
+          <li><span class="publication-year">2025</span><div><span class="publication-venue">SemEval · Coauthor</span><h3><a href="https://aclanthology.org/2025.semeval-1.183/">CAISA at SemEval-2025 Task 7: Multilingual and Cross-lingual Fact-Checked Claim Retrieval <span aria-hidden="true">↗</span></a></h3><p>Muqaddas Haroon, <strong>Shaina Ashraf</strong>, Ipek Baris Schlicht and Lucie Flek</p></div></li>
+          <li><span class="publication-year">2025</span><div><span class="publication-venue">AbjadNLP · Coauthor</span><h3><a href="https://aclanthology.org/2025.abjadnlp-1.2/">MultiProp Framework: Ensemble Models for Enhanced Cross-Lingual Propaganda Detection in Social Media and News using Data Augmentation, Text Segmentation, and Meta-Learning <span aria-hidden="true">↗</span></a></h3><p>Farizeh Aldabbas, <strong>Shaina Ashraf</strong>, Rafet Sifa and Lucie Flek</p></div></li>
+          <li><span class="publication-year">2024</span><div><span class="publication-venue">WOAH · First author</span><h3><a href="https://aclanthology.org/2024.woah-1.11/">Harnessing Personalization Methods to Identify and Predict Unreliable Information Spreader Behavior <span aria-hidden="true">↗</span></a></h3><p><strong>Shaina Ashraf</strong>, Fabio Gruschka, Lucie Flek and Charles Welch</p></div></li>
+          <li><span class="publication-year">2024</span><div><span class="publication-venue">LREC-COLING · First author</span><h3><a href="https://aclanthology.org/2024.lrec-main.409/">DeFaktS: A German Dataset for Fine-Grained Disinformation Detection through Social Media Framing <span aria-hidden="true">↗</span></a></h3><p><strong>Shaina Ashraf</strong>, Isabel Bezzaoui, Ionut Andone, Alexander Markowetz, Jonas Fegert and Lucie Flek</p></div></li>
+        </ol>
+      </section>
+      <section id="contact" class="contact-section" aria-labelledby="contact-title">
+        <p class="eyebrow">05 / Let’s connect</p>
+        <div class="contact-body"><h2 id="contact-title">Good questions.<br><em>Useful AI.</em></h2><div><p>Interested in LLMs, applied NLP or research collaboration? Explore my code and research profile, or get in touch through CAISA Lab.</p><div class="contact-links"><a href="https://github.com/shaina-ashraf">GitHub <span aria-hidden="true">↗</span></a><a href="https://caisa-lab.github.io/members/shaina.html">CAISA profile <span aria-hidden="true">↗</span></a></div></div></div>
+      </section>
+    </main>
+    <footer><span>Shaina Ashraf · Bonn, Germany</span><a href="#main">Back to top ↑</a></footer>
+  </div>
+</body>
 </html>
