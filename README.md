@@ -1,21 +1,31 @@
-# Shaina Ashraf — Research & Applied AI Portfolio
+# Shaina Ashraf — Research, Engineering & Education
 
-Static portfolio for research and industry audiences. No dependencies or build step.
+A static portfolio for research and industry audiences. No dependencies or build step.
 
 - Website: https://shaina-ashraf.github.io/me/
 - Repository: https://github.com/shaina-ashraf/me
 - Hosting: GitHub Pages, `main` branch, `/ (root)`.
-- Page files: `index.html`, `styles.css`, `favicon.svg`, `.nojekyll`.
+- Files: `index.html`, `styles.css`, `site.js`, `favicon.svg`, `.nojekyll`.
 
-## Content and positioning
+## Structure
 
-The page introduces Shaina as a PhD candidate at the University of Bonn and a research assistant in CAISA Lab, as supplied directly by Shaina. Core expertise supplied by Shaina: LLMs, generative AI and model training. The portfolio connects this background with multilingual NLP, retrieval, classification, data and evaluation through five sourced collaborative projects.
+A persistent profile sidebar and five distinct views:
 
-Sections: introduction, about, selected projects, expertise, publications, contact. Four project cards use native expandable details. Public contact routes use the email and LinkedIn supplied by Shaina, alongside GitHub and the CAISA profile. No contact form, analytics, cookies or external fonts.
+1. **About** — career narrative, complementary research/engineering/education strengths, technical expertise.
+2. **Experience** — reverse-chronological professional timeline and education.
+3. **Research** — five project case studies and five publication/preprint records.
+4. **Teaching** — COMSATS teaching areas, student supervision and research mentoring.
+5. **Contact** — public email, LinkedIn, GitHub, Google Scholar and CAISA profile.
 
-## Sources
+Layout inspiration: https://vahidsj.github.io/ — profile sidebar and separate résumé/research/teaching/contact views. The colours, typography, text and implementation are this portfolio's own. No reference-site images or personal content were reused.
 
-The supplied paper collection was reviewed alongside public records. Link to public paper records rather than uploading manuscript copies.
+`site.js` selects a panel from the URL fragment, updates navigation and page titles, and supports browser history and refresh. Earlier `#projects`, `#publications`, `#expertise` and `#contact` links remain supported. Without JavaScript, all sections remain readable. Print styling exposes all sections.
+
+## Content sources
+
+- Direct statements from Shaina: current Bonn/CAISA role, PhD candidacy, LLM/generative AI/model-training expertise, public email and LinkedIn, and contributions across dataset/annotation design, coding, training, evaluation and supervision.
+- Supplied CV: `Shaina_Ashraf_CV_Updated_2026.pdf`. Used for employment chronology, education, teaching, technical skills and Google Scholar link. The original PDF remains outside the repository and is not published.
+- Reviewed publication PDFs, cross-checked with the public records below.
 
 | Project | Public source | Status used |
 | --- | --- | --- |
@@ -27,39 +37,51 @@ The supplied paper collection was reviewed alongside public records. Link to pub
 
 Lab profile: https://caisa-lab.github.io/members/shaina.html
 
+## Career chronology from the supplied CV
+
+| Role | Organisation | Dates |
+| --- | --- | --- |
+| Research Assistant | University of Bonn | Aug 2026–present |
+| Research Assistant | Philipps-Universität Marburg | Jul 2022–Mar 2026 |
+| Faculty Lecturer | COMSATS University, Islamabad | Jan 2016–Dec 2021 |
+| Software Engineer (Mobile) | Coeus Solutions | Dec 2011–Mar 2013 |
+| Software Engineer | Sunztech Intl & TimeLeeTech | Aug 2008–Nov 2010 |
+
+Education: PhD in Computer Science at the University of Bonn, in progress; MS in Computer Science at COMSATS University, December 2015. Employment gaps and combined employer entries are preserved as supplied. No undocumented title or total-years claim is added.
+
 ## Content boundaries
 
-- Shaina confirmed contributions across dataset and annotation design, coding, model training, evaluation and supervision. The About section states this overall scope; project authorship credits remain intact. More granular project-specific responsibilities and leadership scope have not been specified.
-- Project methods describe the collaborative work. Applied-relevance descriptions connect those methods to potential uses; they do not claim commercial deployment or business outcomes.
-- Keep preprints distinct from peer-reviewed publications. An anonymous manuscript without a verified public record was excluded from the public page.
-- Do not present prompt-based retrieval as a deployed RAG application or as LLM fine-tuning.
-- No performance headline scores are currently displayed. Any future metric needs its task, evaluation split and denominator checked against the source. The SemEval paper contains differing score statements, so no single score was promoted.
-- Public email and LinkedIn were supplied directly by Shaina and added to the contact section on 30 October 2026. No CV, photo or unverified software stack has been added.
+- Authorship credits remain intact. Overall contributions were confirmed by Shaina; detailed ownership, leadership scope and metrics for each project have not been independently specified.
+- Career and software-stack descriptions come from the supplied CV. RAG experience is described as career experience; the SemEval claim-retrieval project remains a retrieval/reranking project.
+- Preserve the distinction between published papers and the Conspiracy Frame preprint. The anonymous indoctrination manuscript is not uploaded or listed as a publication; the general research topic is supported by the CV.
+- Applied-relevance descriptions explain potential uses, without claiming business outcomes or commercial deployments.
+- No benchmark headline metrics are promoted. Future metrics require task/split/denominator verification; the SemEval paper contains differing score statements.
+- The private CV and phone number are not published. The CV action opens an email request. No photo is used; the profile uses an initials monogram.
+- Sidebar location is Germany: the CV lists Munich, while the institutional affiliation is Bonn. These are not conflated.
+- No contact form, analytics, cookies or external fonts.
 
 ## Validation — 30 October 2026
 
-- Reviewed supplied PDFs and verified public titles, authorship, venues and preprint status.
-- Previewed the page and opened project details in the browser.
-- Checked responsive rendering at 390 px; no horizontal overflow.
-- Checked unique HTML IDs, in-page anchor targets, stylesheet and favicon paths, and Git whitespace errors.
-- Content commit: `57b1a3ee2dc7fef0fdf9e8342ddf671e23b7890c`.
-- Deployment: https://github.com/shaina-ashraf/me/actions/runs/41124004655 — build and deploy jobs succeeded.
-- Verified the public page: updated title, five project summaries, five publication entries, loaded stylesheet, and no remaining starter placeholder.
+- Reviewed both substantive pages of the supplied CV and inspected the reference site's sidebar and section navigation.
+- Verified five panel routes, navigation highlighting, project expansion, direct publication links, refresh and browser back navigation locally.
+- Checked Experience, Research and Contact at 390 px: no document-level horizontal overflow.
+- Checked all HTML IDs/anchor targets/assets, retained five projects and five publications, and checked that the phone number is absent.
+- Live deployment verification for this structure is recorded below after publication.
 
 ## Local preview
 
-From the project directory in macOS Terminal:
+In macOS Terminal from the project directory:
 
 ```sh
 python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:8000 and stop with Ctrl+C. The site also works by opening `index.html` directly.
+Open http://127.0.0.1:8000 and stop with Ctrl+C.
 
 ## Update and publish
 
-Edit the HTML for content and CSS for styling. Keep asset links relative so the `/me/` project path works. Commit changes to `main`; GitHub Pages publishes the repository root automatically. Verify the resulting page and its project links after deployment.
+Edit HTML for content, CSS for layout and `site.js` for panel navigation. Keep links and asset paths relative to support the `/me/` project URL. Bump the stylesheet/script query version when changing those assets. Commit to `main`, wait for GitHub Pages and verify the live result.
 
 ## Next content pass
 
-Add project-specific contribution details, a CV and visual preferences. Add concrete training details or code links only when verified and appropriate for public sharing.
+Optional additions: a portrait supplied by Shaina, a public CV version, and project-specific code links and contribution details. Add courses, supervised thesis titles and outcomes only when supplied or verified.
